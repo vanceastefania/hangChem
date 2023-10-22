@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        
+        <title>HangMan</title>
+        
+        <link rel="stylesheet" href="style.css">
+        
+        <script src="https://kit.fontawesome.com/07b9ef4869.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    </head>
+
+    <body>
+        <div id ="mainBackground" class="background-image"></div>
+        <div class="background-overlay"></div>
+        <!-- <div id="backLose" class="destroyedLab"></div> -->
+        
+        <div id="containerGame">
+            
+            
+            <div id="backLose" class="destroyedLab"></div>
+
+            <h1 class="title">
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_dcbia9jt.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+                HangChem
+            </h1>
+
+            <div id="textCenter">
+                <div id="details-lives">&#128151<span id="mistakes">0</span> of <span id="lives"> 6</span></div>
+
+                
+                <img id='hangchemPic' src="hangChemPic/0.png" alt="">
+
+                <p id="removeMsg">Guess the Chemestry Element</p>
+                <p id="wordSpot">The word goes here : </p>
+                <audio id="correctSound" src="./audio/sfx_twoTone.ogg" hidden></audio>
+                <div id="keyboard"></div>
+                <audio id="incorrectSound" src="./audio/sfx_lose.ogg" hidden></audio>
+                <audio id="loseSound" src="./Nuclear explosion sound effect.mp3" type="audio/mp3"></audio>
+                <button id="resetButton">Reset</button>
+            </div>
+
+        </div>
+        
+
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
